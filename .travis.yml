@@ -8,10 +8,6 @@ addons:
   apt:
     update:
       - true
-    packages:
-      - aria2
-      - zstd
-      - xz-utils
 services:
   - docker
 before_install:
