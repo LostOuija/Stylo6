@@ -20,7 +20,7 @@ before_script:
   # Use below line If Building for Marshmallow-based Devices
  # - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.3.1-20200222/MinimalOmniRecovery-twrp-6.0-norepo-20200222.tar.xz"
   # Uncomment & Use below line If Building for Nougat-based Devices
-   - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.3.1-20200222/MinimalOmniRecovery-twrp-7.1-norepo-20200222.tar.xz"
+  # - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.3.1-20200222/MinimalOmniRecovery-twrp-7.1-norepo-20200222.tar.xz"
   - wget -q ${TWRP_SOURCE} -O $HOME/twrp.tar.xz
   - tar -xJf twrp.tar.xz --directory $HOME/twrp/ && rm twrp.tar.xz
 script:
@@ -44,7 +44,6 @@ after_success:
   # Optional: You might need to switch from https://transfer.sh to https://file.io
   # - curl -s --upload-file TWRP-$version-mdh50lm-$(date +"%Y%m%d")-Unofficial.img https://transfer.sh/ && echo ""
 deploy:
-  skip_cleanup: true
   provider: releases
   # The secret api_key will be loaded from the environment variables
   api_key: $GitOAUTHToken
@@ -52,7 +51,7 @@ deploy:
   file: $HOME/twrp/*.img
   on:
     tags: false
-    repo: LostOuija/Stylo6 # Optional: If you want to deploy on different repository
+    repo: https://github.com/LostOuija/Stylo6 # Optional: If you want to deploy on different repository
     branch: master # Optional: Needs to be exact as the config branch
 branches:
   only:
