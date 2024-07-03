@@ -1,5 +1,4 @@
 os: linux
-  language: generic
   git: 
     depth: 1
   addons: 
