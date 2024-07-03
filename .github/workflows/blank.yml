@@ -1,6 +1,4 @@
 os: linux
-  dist: focal
-  group: edge
   language: generic
   git: 
     depth: 1
