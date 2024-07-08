@@ -89,4 +89,4 @@ jobs:
           ftp://"$FTPUser":"$FTPPass"@"$FTPHost"//TWBuild-$version-$nowTime/
       - run: >-
           wput extra-system-files-$nowTime.tar.xz
-          ftp://"$FTPUser":"$FTPPass"@"$FTPHost"//TWBuild-$version-$nowTime/
+          ftp://"$FTPUser":"$FTPPass"@"$FTPHost"//TWBuild-$version-$nowTime/ 
