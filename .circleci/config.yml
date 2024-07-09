@@ -18,11 +18,7 @@ jobs:
         os: [ ubuntu-20.04 ]
     steps:
       - name: Install dependencies (Ubuntu)
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pxz wput
-
+        if: runner.os == Linux
       - uses: actions/checkout@v2
 
       - run: docker pull yshalsager/cyanogenmod:latest
