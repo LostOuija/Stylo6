@@ -1,7 +1,6 @@
 version: 2.1
 jobs:
   build:
-  runs-on: ${{ matrix.os }}
     docker:
       - image: cimg/base:current
     resource_class: lostouija/stylo6
