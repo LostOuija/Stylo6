@@ -2,10 +2,6 @@ version: 2.1
 jobs:
   build:
   runs-on: ${{ matrix.os }}
-        run:
-        sudo apt-get update
-          sudo apt-get install -y pxz wput
-      - uses: actions/checkout@v2
     docker:
       - image: cimg/base:current
     resource_class: lostouija/stylo6
