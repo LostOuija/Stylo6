@@ -2,9 +2,6 @@ version: 2.1
 jobs:
   build:
   runs-on: ${{ matrix.os }}
-    steps:
-      - name: Install dependencies (Ubuntu)
-        if: runner.os == 'Linux'
         run:
         sudo apt-get update
           sudo apt-get install -y pxz wput
