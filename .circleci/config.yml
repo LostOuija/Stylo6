@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build:
-            - run: docker pull yshalsager/cyanogenmod:latest
+             run: docker pull yshalsager/cyanogenmod:latest
       - run: cd $HOME && mkdir twrp
       - run: >-
           wget -q https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.3.1-20200222/MinimalOmniRecovery-twrp-6.0-norepo-20200222.tar.xz -O $HOME/twrp.tar.xz
