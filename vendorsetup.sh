@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_LUNCH_CHOICES omni_mdh50lm-user
-COMMON_LUNCH_CHOICES omni_mdh50lm-userdebug
-COMMON_LUNCH_CHOICES omni_mdh50lm-eng
+add_lunch_combo omni_mdh50lm-user
+add_lunch_combo omni_mdh50lm-userdebug
+add_lunch_combo omni_mdh50lm-eng
