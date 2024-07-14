@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+LOCAL_PATH := device/lge/mdh50lm
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_mdh50lm.mk
 
